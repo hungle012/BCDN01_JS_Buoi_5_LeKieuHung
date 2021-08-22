@@ -10,26 +10,21 @@ function tinhTienDien(soKw,giaKw50Dau,giaKw50_100,giaKw100_200,giaKw200_350,giaK
     var tienDien = 0;
     if (0 < soKw && soKw <= 50) {
         tienDien = soKw * giaKw50Dau;
-        console.log(tienDien);
 
     } else if (50 < soKw  && soKw <= 100) {
         tienDien = 50 * giaKw50Dau + (soKw -50) * giaKw50_100;
-        console.log(tienDien);
 
     } else if (100 < soKw  && soKw <= 200) {
         tienDien = 50 * giaKw50Dau + 50 * giaKw50_100 + (soKw - 100) * giaKw100_200;
-        console.log(tienDien);
 
     } else if (200 < soKw  && soKw <= 350) {
         tienDien = 50 * giaKw50Dau + 50 * giaKw50_100 + 100 * giaKw100_200 + (soKw - 200) * giaKw200_350;
-        console.log(tienDien);
 
     } else if (soKw > 350) {
         tienDien = 50 * giaKw50Dau + 50 * giaKw50_100 + 100 * giaKw100_200 + 150 * giaKw200_350 + (soKw - 350) * giaKwTren350;
-        console.log(tienDien);
 
     } else {
-        console.log("vui lòng nhập lại số Kw");
+        alert("vui lòng nhập lại số Kw");
     }
     return tienDien;
 }

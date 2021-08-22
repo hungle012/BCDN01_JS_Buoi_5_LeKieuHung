@@ -30,12 +30,10 @@ function tienDVDoanhNghiep(soKetNoi,giaKetNoi10,giaKetNoiTren10) {
     var tienDV = 0;
     if (0 < soKetNoi && soKetNoi <= 10) {
         tienDV = giaKetNoi10;
-        console.log(soKetNoi);
     } else if (soKetNoi > 10) {
         tienDV = giaKetNoi10 + (soKetNoi - 10) * giaKetNoiTren10;
-        console.log(soKetNoi);
     } else {
-        console.log("vui lòng nhập lại số kết nối");
+        alert("vui lòng nhập lại số kết nối");
     }
     return tienDV;
 }
