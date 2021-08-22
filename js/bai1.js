@@ -28,7 +28,6 @@ function kiemTra() {
         alert("Điếm thi không được nhỏ hơn 0 hoặc lớn hơn 10");
     } else {
          var diem = tinhDiem(diem1, diem2, diem3, khuVuc, doiTuong);
-        console.log(diem);
         soSanh(diem, diemChuan);
     }
    
