@@ -47,7 +47,7 @@ function tienCap() {
         alert("số kênh cao cấp không hợp lệ");
         return 0;
     }
-    var soKetNoi = parseInt(document.getElementById("inputKenhCC").value);
+    var soKetNoi = parseInt(document.getElementById("inputSoKetNoi").value);
 
     var tienCap = 0;
     switch (khachHang) {
